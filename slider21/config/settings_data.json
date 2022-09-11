@@ -1,0 +1,426 @@
+{
+  "current": {
+    "sections": {
+      "header": {
+        "settings": {
+          "show_header": true,
+          "logo_type": "image",
+          "logo_action": "product",
+          "logo_text": "OASIS",
+          "show_menu": true,
+          "menu": "FccSfri2",
+          "search_toggle": "検索",
+          "language_logout": "ログアウト",
+          "language_settings": "設定",
+          "language_library": "マイページ",
+          "show_header_announcement": false,
+          "announcement_text": "Announcement",
+          "link_target": false,
+          "announcement_color": "#1abc9c",
+          "announcement_text_color": "#fff",
+          "align_logo": "left",
+          "logo": "themes/2150982503/settings_images/yhZceBASfW73wURsvSS8_baTtUHHURb2wvRIsokfU_Logo_coted01.png",
+          "header_height": "40",
+          "language_announcements": "Announcements",
+          "background_color_user": "#ecf0f1",
+          "text_color_user": "#316745",
+          "announcement_link": "",
+          "background_color": "#ecf0f1",
+          "text_color": "#316745"
+        },
+        "type": "header",
+        "hidden": "false",
+        "name": "Header",
+        "blocks": {
+        },
+        "block_order": [
+
+        ]
+      },
+      "search": {
+        "settings": {
+          "show_search": "true",
+          "search_text": "Search for something...",
+          "background_color": "#92969c",
+          "text_color": "#ffffff"
+        },
+        "type": "search",
+        "hidden": "false"
+      },
+      "product_hero": {
+        "settings": {
+          "show_hero": false,
+          "overlay": "rgba(0,0,0,.5)",
+          "text_color": "#ffffff",
+          "alignment": "left",
+          "spacing": "medium",
+          "bg_image": ""
+        },
+        "block_order": [
+          "1484781342623",
+          "1481845615592"
+        ],
+        "type": "product_hero",
+        "hidden": "false",
+        "blocks": {
+          "1484781342623": {
+            "id": "1484781342623",
+            "name": "Product Info",
+            "hidden": "false",
+            "type": "product_info",
+            "schemaName": "Product Info",
+            "sectionId": "product_hero",
+            "sectionType": "product_hero",
+            "settings": {
+              "show_title": true,
+              "show_desc": true
+            }
+          },
+          "1481845615592": {
+            "id": "1481845615592",
+            "name": "Start Button",
+            "hidden": "false",
+            "type": "product_start",
+            "schemaName": "Start Button",
+            "sectionId": "product_hero",
+            "sectionType": "product_hero",
+            "settings": {
+              "start_text": "Start Course",
+              "resume_text": "Resume Course",
+              "again_text": "Start Course Over",
+              "btn_style": "solid",
+              "btn_size": "med",
+              "btn_width": "auto",
+              "btn_background_color": "",
+              "btn_text_color": ""
+            }
+          }
+        },
+        "name": "Hero"
+      },
+      "product_body": {
+        "settings": {
+          "show_welcome": true,
+          "alignment": "left"
+        },
+        "block_order": [
+          "1481845625971",
+          "1655125632285",
+          "1655125767448"
+        ],
+        "type": "product_body",
+        "hidden": "false",
+        "blocks": {
+          "1481845625971": {
+            "id": "1481845625971",
+            "name": "Product Info",
+            "hidden": "false",
+            "type": "product_info",
+            "schemaName": "Product Info",
+            "sectionId": "product_body",
+            "sectionType": "product_body",
+            "settings": {
+              "show_img": false,
+              "show_title": true,
+              "show_desc": true
+            }
+          },
+          "1655125632285": {
+            "id": "1655125632285",
+            "name": "Code",
+            "hidden": "false",
+            "type": "product_code",
+            "schemaName": "Code",
+            "sectionId": "product_body",
+            "sectionType": "product_body",
+            "settings": {
+              "code": ""
+            }
+          },
+          "1655125767448": {
+            "id": "1655125767448",
+            "name": "Start Button",
+            "hidden": "false",
+            "type": "product_start",
+            "schemaName": "Start Button",
+            "sectionId": "product_body",
+            "sectionType": "product_body",
+            "settings": {
+              "start_text": "受講を開始する",
+              "resume_text": "続きから開始する",
+              "again_text": "続きから開始する",
+              "btn_style": "outline",
+              "btn_size": "small",
+              "btn_width": "auto",
+              "btn_background_color": "#335719",
+              "btn_text_color": ""
+            }
+          }
+        },
+        "name": "Welcome Body"
+      },
+      "product_syllabus": {
+        "settings": {
+          "show_syllabus": true,
+          "type": "posts",
+          "categories": "",
+          "coming_soon": "Coming Soon",
+          "show_more": "Show More",
+          "truncate": ""
+        },
+        "type": "product_syllabus",
+        "hidden": "false",
+        "name": "Product Syllabus",
+        "blocks": {
+        },
+        "block_order": [
+
+        ]
+      },
+      "product_sidebar": {
+        "settings": {
+          "show_sidebar": false
+        },
+        "block_order": [
+          "1481845656651"
+        ],
+        "type": "product_sidebar",
+        "hidden": "false",
+        "blocks": {
+          "1481845656651": {
+            "id": "1481845656651",
+            "name": "Course Progress",
+            "hidden": "false",
+            "type": "course_progress",
+            "schemaName": "Course Progress",
+            "sectionId": "product_sidebar",
+            "sectionType": "product_sidebar",
+            "settings": {
+              "show_img": true,
+              "completed": "Lessons Completed",
+              "accent_color": "#ff0606"
+            }
+          }
+        },
+        "name": "Product Sidebar"
+      },
+      "footer": {
+        "settings": {
+          "show_footer": "true",
+          "show_copyright": "true",
+          "copyright": "Kajabi",
+          "show_logo": "false",
+          "logo": "",
+          "show_menu": "true",
+          "menu": "footer",
+          "background_color": "",
+          "text_color": "",
+          "align_logo": "left",
+          "show_social_icons": "true",
+          "social_icon_background_style": "social-icons--none",
+          "social_icon_alignment": "social-icons--left",
+          "social_icons_text_color": "",
+          "social_icons_background_color": "",
+          "social_icon_link_facebook": "https://www.facebook.com/kajabi",
+          "social_icon_link_twitter": "https://www.twitter.com/kajabi",
+          "social_icon_link_instagram": "https://www.instagram.com/kajabi/",
+          "social_icon_link_youtube": "",
+          "social_icon_link_pinterest": "",
+          "social_icon_link_google_plus": "",
+          "social_icon_link_vimeo": "",
+          "social_icon_link_github": "",
+          "social_icon_link_itunes": "",
+          "social_icon_link_linkedin": "",
+          "social_icon_link_soundcloud": "",
+          "social_icon_link_yelp": "",
+          "social_icon_link_tumblr": "",
+          "social_icon_link_slack": "",
+          "social_icon_link_flickr": "",
+          "social_icon_link_dribbble": ""
+        },
+        "type": "footer",
+        "hidden": "false"
+      },
+      "breadcrumbs": {
+        "settings": {
+          "show_breadcrumbs": true,
+          "categories": "カテゴリ一覧",
+          "search": "Search",
+          "announcements": "Announcements",
+          "divider": ">",
+          "color": "#2c3e50",
+          "color_active": "#2c3e50"
+        },
+        "type": "breadcrumbs",
+        "name": "Breadcrumbs",
+        "hidden": "false",
+        "blocks": {
+        },
+        "block_order": [
+
+        ]
+      },
+      "post_player": {
+        "settings": {
+          "player_type": "inline",
+          "count_text_singular": "Lesson",
+          "count_text_plural": "Lessons",
+          "next_cat": "Next Category",
+          "next": "Next",
+          "previous": "Back",
+          "btn_style": "outline",
+          "btn_size": "small",
+          "auto_advance": true,
+          "timer": "20",
+          "begin": "Will Begin In",
+          "seconds": "Seconds",
+          "play": "Play Now",
+          "cancel": "Cancel",
+          "player_accent": "",
+          "player_color": "",
+          "show_more": "Show More",
+          "btn_background_color": "",
+          "btn_text_color": "",
+          "accent_color": "rgba(0, 0, 0, 0)"
+        },
+        "type": "post_player",
+        "name": "Post Player",
+        "hidden": "false",
+        "blocks": {
+        },
+        "block_order": [
+
+        ]
+      },
+      "post_body": {
+        "settings": {
+          "alignment": "left",
+          "hide_mark_as_complete": false,
+          "mark_as_complete_position": "bottom",
+          "language_complete": "Complete",
+          "language_mark_as_complete": "Mark As Complete",
+          "use_next": true,
+          "encouragement": "Great Job! Keep Going!",
+          "next": "Next Lesson",
+          "btn_background_color": "#f1c40f",
+          "btn_text_color": "#2c3e50",
+          "smart_next_background": "#f6f6f6",
+          "smart_next_color": "",
+          "smart_next_link": ""
+        },
+        "block_order": [
+          "1481845691504"
+        ],
+        "type": "post_body",
+        "blocks": {
+          "1481845691504": {
+            "id": "1481845691504",
+            "name": "Post Info",
+            "hidden": "false",
+            "type": "post_info",
+            "schemaName": "Post Info",
+            "sectionId": "post_body",
+            "sectionType": "post_body",
+            "settings": {
+              "show_desc": true,
+              "show_title": true,
+              "show_category": true
+            }
+          }
+        },
+        "name": "Post Body",
+        "hidden": "false"
+      },
+      "post_comments": {
+        "settings": {
+          "language_comment_singular": "Comment",
+          "language_comment_plural": "Comments",
+          "language_comment_locked": "Comments Locked",
+          "language_comment_placeholder": "Say Something...",
+          "language_comment_add": "Post Comment",
+          "language_comment_reply": "REPLY",
+          "language_comment_edit": "EDIT",
+          "language_comment_show_more": "Show More",
+          "language_comment_show_more_loading": "Loading More Comments...",
+          "comment_btn_background_color": "",
+          "comment_btn_text_color": ""
+        },
+        "type": "post_comments"
+      },
+      "post_sidebar": {
+        "settings": {
+          "show_sidebar": "true"
+        },
+        "block_order": [
+          "1481845715286",
+          "1481845721274"
+        ],
+        "type": "post_sidebar",
+        "blocks": {
+          "1481845715286": {
+            "settings": {
+              "language_downloads": "Downloads"
+            },
+            "type": "post_downloads"
+          },
+          "1481845721274": {
+            "settings": {
+              "heading": "Instructor",
+              "show_img": "true",
+              "image": "",
+              "name": "OASIS",
+              "title": "Instructor",
+              "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.",
+              "accent_color": ""
+            },
+            "type": "instructor"
+          }
+        }
+      },
+      "pop_upsell": {
+        "settings": {
+          "show": "false",
+          "enabled": "false",
+          "show_img": "false",
+          "image": "",
+          "text": "<h1>Course Complete</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>",
+          "overlay_color": "",
+          "background_color": ""
+        },
+        "type": "pop_upsell"
+      },
+      "categories_body": {
+        "settings": {
+          "categories": "シリーズ一覧",
+          "coming_soon": "Coming Soon"
+        },
+        "type": "categories_body",
+        "name": "Categories Body",
+        "hidden": "false",
+        "blocks": {
+        },
+        "block_order": [
+
+        ]
+      }
+    },
+    "text_color": "#000",
+    "text_color_light": "#316745",
+    "font_family": "Open Sans",
+    "heading_font_family": "Open Sans",
+    "color_success": "#1abc9c",
+    "color_info": "#34495e",
+    "color_warning": "#f39c12",
+    "color_danger": "#e74c3c",
+    "color_container_bg": "#ffffff",
+    "color_primary": "#335719",
+    "use_bg_img": "false",
+    "page_background_img": "",
+    "v_align": "top",
+    "body_width": "auto",
+    "color_offset": "#f9f9f9",
+    "color_dark": "#30373e",
+    "color_darker": "#272d34",
+    "favicon": "themes/2151385983/settings_images/tDM2bhvThm67rMa8y12E_baTtUHHURb2wvRIsokfU_Logo_coted01.png"
+  }
+}
