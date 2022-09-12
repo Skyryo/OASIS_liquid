@@ -9,6 +9,9 @@ html, body, p {
   display: inline-block;
   background-color: transparent!important;
 }
+a {
+  text-decoration: none;
+}
 
 .dropdown-menu {
   right: 0;
@@ -164,6 +167,13 @@ product top
   .media {
     display: block;
   }
+}
+/*--------------
+categories
+--------------*/
+.card-img-top{
+  margin: 0;
+  padding:1.25rem 0.25rem 0;
 }
 /*--------------
 Post

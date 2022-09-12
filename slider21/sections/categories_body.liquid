@@ -2,7 +2,7 @@
   <div class="panel__body">
     <h5 class="syllabus__heading" kjb-settings-id="{{ 'categories' | settings_id: section: section }}">{{ section.settings.categories }}<span class="pull-right">{{ current_product.categories.size }}</span></h5>
     {% paginate current_product.categories %}
-      <div class="row row-cols-2 row-cols-md-3 g-4">
+      <div class="row row-cols-2 row-cols-md-4">
       {% for category in paginate.collection %}
         {% include "category" %}
       {% endfor %}
