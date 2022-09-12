@@ -206,24 +206,25 @@
       },
       "footer": {
         "settings": {
-          "show_footer": "true",
-          "show_copyright": "true",
+          "show_footer": true,
+          "show_copyright": true,
           "copyright": "Kajabi",
-          "show_logo": "false",
-          "logo": "",
-          "show_menu": "true",
+          "show_logo": true,
+          "show_menu": true,
           "menu": "footer",
-          "background_color": "",
-          "text_color": "",
-          "align_logo": "left",
-          "show_social_icons": "true",
+          "align_logo": "center",
+          "show_social_icons": true,
+          "social_icons_new_window": false,
           "social_icon_background_style": "social-icons--none",
           "social_icon_alignment": "social-icons--left",
-          "social_icons_text_color": "",
-          "social_icons_background_color": "",
           "social_icon_link_facebook": "https://www.facebook.com/kajabi",
           "social_icon_link_twitter": "https://www.twitter.com/kajabi",
           "social_icon_link_instagram": "https://www.instagram.com/kajabi/",
+          "logo": "themes/2151595785/settings_images/ricus7NZSJqRuQgY8afw_Logo_OASIS_Opc0.png",
+          "background_color": "#ecf0f1",
+          "text_color": "#316745",
+          "social_icons_text_color": "",
+          "social_icons_background_color": "",
           "social_icon_link_youtube": "",
           "social_icon_link_pinterest": "",
           "social_icon_link_google_plus": "",
@@ -239,7 +240,13 @@
           "social_icon_link_dribbble": ""
         },
         "type": "footer",
-        "hidden": "false"
+        "hidden": "false",
+        "name": "Footer",
+        "blocks": {
+        },
+        "block_order": [
+
+        ]
       },
       "breadcrumbs": {
         "settings": {

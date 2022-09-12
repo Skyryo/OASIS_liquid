@@ -47,19 +47,23 @@ html, body, p {
 /*--------------
 footer
 --------------*/
+.footer--center{
+  text-align: left;
+}
 .user-footer-menu-container {
   display: flex;
-  
+  .footer__menu {
+    margin-right: 12%;
+  }
   .user-footer-menu-title{
     font-weight: bold;
-
-    .footer__menu-item{
-      display: block;
-      text-decoration: none;
-    }
   }
+  .footer__menu-item{
+    display: block;
+    text-decoration: none;
+    margin: 0;
+  }  
 }
-
 /*--------------
 product top
 --------------*/
