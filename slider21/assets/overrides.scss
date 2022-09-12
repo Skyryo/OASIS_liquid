@@ -52,11 +52,13 @@ footer
 }
 .user-footer-menu-container {
   display: flex;
+  
   .footer__menu {
     margin-right: 12%;
   }
   .user-footer-menu-title{
     font-weight: bold;
+    font-size: 1.2rem;
   }
   .footer__menu-item{
     display: block;
@@ -230,6 +232,24 @@ responsive
   .next-btn-area{
     display: flex;
     justify-content: space-between;
+  }
+  /*--------------
+  footer
+  --------------*/
+  .user-footer-menu-container {
+    flex-direction: column;
+
+    .user-footer-menu-title{
+      border-bottom: 1px solid #c7c7c7;
+      line-height: 2.5rem;
+    }
+    .footer__menu {
+      margin-right: auto;
+      margin-bottom: 2rem;
+    }
+    .footer__menu-item{
+      margin-left: 1rem;
+    }
   }
 }
 
