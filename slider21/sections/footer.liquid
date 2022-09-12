@@ -14,23 +14,36 @@
         {% if f-ShowLogo %}
           <img src="{{ f-Logo }}" class="logo footer__logo" kjb-settings-id="{{ kjb-f-Logo }}"/>
         {% endif %}
-        {% if f-ShowCopy %}
-          <span kjb-settings-id="{{ kjb-f-Copy }}" class="footer__copyright">&copy; {{ 'now' | date: "%Y" }} {{ f-Copy }}</span>
-        {% endif %}
         {% if current_site.display_powered_by_link? %}
           <div class="footer__powered-by">
             {{ powered_by_link }}
           </div>
         {% endif %}
         {% if f-ShowMenu %}
-          <div kjb-settings-id="{{ kjb-f-Menu }}" class="footer__menu">
-            {% for link in current_site.link_lists[f-Menu].links %}
-              <a class="footer__menu-item" href="{{ link.url }}">{{ link.name }}</a>
-            {% endfor %}
+          <div class="user-footer-menu-container">
+            <div kjb-settings-id="{{ kjb-f-Menu }}" class="footer__menu">
+              {% for link in current_site.link_lists[f-Menu].links %}
+                <a class="footer__menu-item" href="{{ link.url }}">{{ link.name }}</a>
+              {% endfor %}
+            </div>
+            <div kjb-settings-id="{{ kjb-f-Menu }}" class="footer__menu">
+              <div class="user-footer-menu-title">教えて○○先生！</div>
+              <a href="#" class="footer__manu-item">教えて○○先生！とは</a>
+              <a href="#" class="footer__manu-item">参加申し込み</a>
+            </div>
+            <div kjb-settings-id="{{ kjb-f-Menu }}" class="footer__menu">
+              <div class="user-footer-menu-title">クラブ活動</div>
+              <a href="#" class="footer__manu-item">クラブ活動とは</a>
+              <a href="#" class="footer__manu-item">クラブ活動に参加する</a>
+              <a href="#" class="footer__manu-item">クラブをつくる</a>
+            </div>
           </div>
         {% endif %}
       </div>
       {% include "social_icons" %}
+      {% if f-ShowCopy %}
+          <span kjb-settings-id="{{ kjb-f-Copy }}" class="footer__copyright">&copy; {{ 'now' | date: "%Y" }} {{ f-Copy }}</span>
+      {% endif %}  
     </div>
   </footer>
 {% endif %}
