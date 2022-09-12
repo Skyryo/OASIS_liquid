@@ -234,6 +234,17 @@ responsive
     justify-content: space-between;
   }
   /*--------------
+  categories
+  --------------*/
+  .card {
+    .card-header {
+      padding: 0;
+    }
+  }
+  .card-body{
+    padding: 0;
+  }
+  /*--------------
   footer
   --------------*/
   .user-footer-menu-container {
@@ -244,7 +255,7 @@ responsive
       line-height: 2.5rem;
     }
     .footer__menu {
-      margin-right: auto;
+      margin-right: 0;
       margin-bottom: 2rem;
     }
     .footer__menu-item{
