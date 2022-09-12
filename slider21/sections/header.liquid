@@ -19,11 +19,11 @@
     </h1>
     {% else %}
     {% if h-LogoAction == "product" %}
-    <a class="navbar-brand" href="{{ current_product.url }}" class="logo logo--image">
+    <a class="navbar-brand" style="width:100px;" href="{{ current_product.url }}" class="logo logo--image">
       <img src="{{ h-LogoImg }}" kjb-settings-id="{{ kjb-H-LogoImg }}" />
     </a>
     {% elsif h-LogoAction == "site" %}
-    <a href="/" class="logo logo--image">
+    <a href="/" class="logo logo--image" style="width:100px;">
       <img class="navbar-brand" src="{{ h-LogoImg }}" kjb-settings-id="{{ kjb-H-LogoImg }}" />
     </a>
     {% endif %}
@@ -55,7 +55,7 @@
             {% for link in current_site.link_lists[h-Menu].links %}
             <!--a class="dropdown-item" href="{{ link.url }}">{{ link.name }}</a-->
             <li><a class="dropdown-item" href="{{ link.url }}">{{ link.name }}</a>
-            {% endfor %}
+              {% endfor %}
           </ul>
         </li>
         <li class="nav-item">
@@ -67,6 +67,11 @@
         <li class="nav-item">
           <a class="link-list__link nav-link" href="https://www.oasis-academy.jp/club">クラブ活動</a>
         </li>
+        <li><a class="search__toggle" kjb-settings-id="{{ kjb-H-SearchToggle }}">{{ h-SeachToggle }}</a></li>
+        {% for block in section.blocks %}
+        {% include "cta_block" %}
+        {% endfor %}
+        {% include "user_dropdown" %}
       </ul>
     </div>
   </div>
@@ -74,12 +79,6 @@
   <!--/div-->
   <!--/div-->
   {% endif %}
-
-  <a class="search__toggle" kjb-settings-id="{{ kjb-H-SearchToggle }}">{{ h-SeachToggle }}</a>
-  {% for block in section.blocks %}
-  {% include "cta_block" %}
-  {% endfor %}
-  {% include "user_dropdown" %}
 </div>
 </div>
 </div>
