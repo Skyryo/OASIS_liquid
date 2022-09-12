@@ -33,16 +33,16 @@
       </div>
       <div kjb-settings-id="{{ kjb-H-Menu }}" class="header-menu">
         {% if h-ShowMenu %}
-          <div class="dropdown">
+          <!--div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#316745;font-weight:unset;border:none;outline:unset;background-color:transparent;"">
               カテゴリ一覧
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"-->
               {% for link in current_site.link_lists[h-Menu].links %}
                 <a class="dropdown-item" href="{{ link.url }}">{{ link.name }}</a>
               {% endfor %}
-            </div>
-          </div>  
+            <!--/div-->
+          <!--/div-->  
         {% endif %}
         
         <a class="search__toggle" kjb-settings-id="{{ kjb-H-SearchToggle }}">{{ h-SeachToggle }}</a>

@@ -171,9 +171,16 @@ product top
 /*--------------
 categories
 --------------*/
-.card-img-top{
-  margin: 0;
-  padding:1.25rem 0.25rem 0;
+.card {
+  margin-top: 0;
+
+  .card-header {
+    border-bottom: unset;
+  }
+  .card-img-top  {
+    padding:1.25rem 0.25rem 0;
+    margin: 0!important;
+  }
 }
 /*--------------
 Post

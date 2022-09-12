@@ -19,7 +19,7 @@
     </div>
   {% else %}
     <a href="{{ category.url }}" id="category-{{ category.id }}">
-      <div class="col">
+      <div class="col" style="border: 1px solid rgba(0,0,0,0.06);">
         <div class="card h-100">
           <h5 class="card-header" style= "text-align:center;">{{ category.title }}</h5>          
           {% if category.poster_image_url %}
