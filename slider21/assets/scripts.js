@@ -1004,6 +1004,29 @@ $( document ).ready(function() {
   });
 })(jQuery);
 
+//////////////////////////
+// メニューホバー時の動作 //
+//////////////////////////
+//$(function(){
+//  console.log(1);
+//  $("#dropdownMenuButton").hover(
+/*   function () {
+   $(".dropdown").addClass("open");
+   },
+  );
+});
+$(function(){
+  console.log(2);
+  $(".dropdown-menu").hover(
+   function () {
+   $(".dropdown").addClass("open");
+   },
+   function () {
+    $(".dropdown").removeClass("open"); 
+   }
+  );
+});
+*/
 ///////////////////////////
 // カスタムスクリプト slick//
 ///////////////////////////
@@ -1039,7 +1062,7 @@ Nd.millisecond=Nd.milliseconds=Md,Nd.utcOffset=Na,Nd.utc=Pa,Nd.local=Qa,Nd.parse
 (function() {
   var $element = $(".track--active"),
   $parent = $(".player__playlist"),
-  elementTop = $element.offset().top(),
+  elementTop = $element.offset(),
   elementHeight = $element.height(),
   viewportHeight = $parent.height(),
   scrollTop = elementTop - ((viewportHeight - elementHeight) / 2 + 250);

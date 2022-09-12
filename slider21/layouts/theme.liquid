@@ -80,28 +80,7 @@
     {% endif %}
 
     <!-- Header hook ================================================== -->
-    {% content_for_header %}
-    <script>
-      const parent = document.querySelectorAll(".dropdown");
-      const node = Array.prototype.slice.call(parent, 0);
-
-      node.forEach(function (element) {
-        element.addEventListener(
-          "mouseover",
-          function () {
-            element.classList.add("open");
-          },
-          false
-        );
-        element.addEventListener(
-          "mouseout",
-          function () {
-              element.classList.remove("open");
-          },
-          false
-        );
-      });
-    </script>      
+    {% content_for_header %}    
   </head>
   <body>
     <div class="container container--main">
