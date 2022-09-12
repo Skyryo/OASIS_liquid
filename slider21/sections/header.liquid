@@ -2,7 +2,7 @@
 {% if h-Show %}
 {% include "header_announcement" %}
 <div
-  class="header header--{{ h-AutoTextColor }} header--{{ h-Alignment }} navbar navbar-expand-lg navbar-light bg-light fixed-top"
+  class="header header--{{ h-AutoTextColor }} header--{{ h-Alignment }} navbar navbar-expand-md navbar-light bg-light fixed-top"
   kjb-settings-id="{{ kjb-H-BgColor }}">
   <div class="container">
     {% if h-LogoType == "text" %}
@@ -67,7 +67,7 @@
         <li class="nav-item">
           <a class="link-list__link nav-link" href="https://www.oasis-academy.jp/club">クラブ活動</a>
         </li>
-        <li><a class="search__toggle" kjb-settings-id="{{ kjb-H-SearchToggle }}">{{ h-SeachToggle }}</a></li>
+        <li><a class="nav-item search__toggle" kjb-settings-id="{{ kjb-H-SearchToggle }}">{{ h-SeachToggle }}</a></li>
         {% for block in section.blocks %}
         {% include "cta_block" %}
         {% endfor %}

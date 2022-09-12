@@ -5,48 +5,20 @@
 html, body, p {
   font-size: 14px!important;
 }
-.dropdown {
-  display: inline-block;
-  background-color: transparent!important;
-}
 a {
   text-decoration: none;
 }
-
-.dropdown-menu {
-  right: 0;
-  top: 62px;
-  left: auto;
-  padding: 20px 30px;
-  margin: 0;
-  background-color:#ecf0f1 ;
-  color: #335719;
-  text-align: center;
-  border-radius: 0;
+.header {
+  padding: 0;
+  .navbar-collapse{
+    flex-grow: unset;
+  }
+  .user {
+    position: relative;
+  }
+  
 }
 
-.dropdown-item {
-  display: block!important;
-  color: white;
-  margin: 0!important;
-  padding: 0!important;
-}
-
-.dropdown-item:hover {
-  color: #335719!important;
-  background-color: #ecf0f1 !important;
-}
-
-.btn-secondary.focus, .btn-secondary:focus {
-  background-color: transparent;
-  border-color: transparent;
-  outline-offset: unset;
-
-}
-
-.dropdown-toggle::after {
-  content: none;
-}
 /*--------------
 footer
 --------------*/
