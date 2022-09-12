@@ -44,6 +44,21 @@ html, body, p {
 .dropdown-toggle::after {
   content: none;
 }
+/*--------------
+footer
+--------------*/
+.user-footer-menu-container {
+  display: flex;
+  
+  .user-footer-menu-title{
+    font-weight: bold;
+
+    .footer__menu-item{
+      display: block;
+      text-decoration: none;
+    }
+  }
+}
 
 /*--------------
 product top
