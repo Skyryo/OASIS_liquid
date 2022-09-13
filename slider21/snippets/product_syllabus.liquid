@@ -3,80 +3,86 @@
 {% if section.settings.show_syllabus %}
   {% if section.settings.type == "posts" %}
     {% paginate product.categories %}
-      <div class="search-theme">
-        <span class="input-group-addon search__icon">
-          <i class="fa fa-search" style="font-size: 1.5rem;"></i>
-        </span>
-        <h3 class="section-title search-icon">学習ジャンルから探す</h3>
+      <div class="user-search-theme-container">
+        <div class="search-theme">
+          <span class="input-group-addon search__icon">
+            <i class="fa fa-search" style="font-size: 1.5rem;"></i>
+          </span>
+          <h3 class="section-title search-icon">学習ジャンルから探す</h3>
+        </div>
+        <div class="category-search">
+          {% for category in paginate.collection %}
+            <button type="button" class="btn btn-outline-success" onclick="location.href='{{ category.url }}'">{{ category.title }}</button>
+          {% endfor %} 
+        </div>
       </div>
-      <div class="category-search">
-        {% for category in paginate.collection %}
-          <button type="button" class="btn btn-outline-success" onclick="location.href='{{ category.url }}'">{{ category.title }}</button>
-        {% endfor %} 
-      </div>
-      <div class="search-theme">
-        <span class="input-group-addon search__icon">
-          <i class="fa fa-search" style="font-size: 1.5rem;"></i>
-        </span>
-        <h3 class="section-title search-icon">コンテンツ一覧から探す</h3>
-      </div>    
-      {% for category in paginate.collection %}
-        {% if category.pending_drip? %}
-          <div class="panel syllabus" kjb-settings-id="{{ 'type' | settings_id: section: section }}">
-            <div class="panel__body">
-              <h5 class="syllabus__heading">
-                {{ category.title }}
-                <span kjb-settings-id="{{ 'coming_soon' | settings_id: section: section }}">&nbsp;{{ section.settings.coming_soon }}</span>
-              </h5>
-            </div>
-          </div>
-        {% else %}
-          <div class="panel syllabus" kjb-settings-id="{{ 'type' | settings_id: section: section }}">
-            <div class="panel__body">
-              <h3 class="syllabus__heading">
-                {{ category.title }}
-              </h3>
-              <hr style="margin: 0;">
-              {% for post in category.posts limit:10%}
-                {% include "syllabus_item" %}
-              {% endfor %}
-              {% if category.posts.size >= 10 %}
-                <div class="syllabus__item">
-                  <a href="{{ category.url }}" kjb-settings-id="{{ 'show_more' | settings_id: section: section }}">{{ section.settings.show_more }}</a>
+      <div class="container">
+        <div class="row section__row">   
+          <div class="search-theme">
+            <span class="input-group-addon search__icon">
+              <i class="fa fa-search" style="font-size: 1.5rem;"></i>
+            </span>
+            <h3 class="section-title search-icon">コンテンツ一覧から探す</h3>
+          </div>    
+          {% for category in paginate.collection %}
+            {% if category.pending_drip? %}
+              <div class="panel syllabus" kjb-settings-id="{{ 'type' | settings_id: section: section }}">
+                <div class="panel__body">
+                  <h5 class="syllabus__heading">
+                    {{ category.title }}
+                    <span kjb-settings-id="{{ 'coming_soon' | settings_id: section: section }}">&nbsp;{{ section.settings.coming_soon }}</span>
+                  </h5>
                 </div>
-              {% endif %}
-              {% if category.children? %}
-                {% for category in category.subcategories %}
-                  {% if category.pending_drip? %}
-                    <div class="syllabus__item syllabus__item--sub" id="category-{{ category.id }}">
-                      <h5 class="syllabus__heading">
-                        {{ category.title }}
-                        <span kjb-settings-id="{{ 'coming_soon' | settings_id: section: section }}">&nbsp;{{ section.settings.coming_soon }}</span>
-                      </h5>
-                    </div>
-                  {% else %}
-                    <div class="syllabus__item syllabus__item--sub" id="category-{{ category.id }}">
-                      <h5 class="syllabus__heading">
-                        {{ category.title }}
-                      </h5>
-                      <div class="syllabus_item_container">
-                        {% for post in category.posts %}
-                          {% include "syllabus_item" %}
-                        {% endfor %}
-                      </div>
+              </div>
+            {% else %}
+              <div class="panel syllabus" kjb-settings-id="{{ 'type' | settings_id: section: section }}">
+                <div class="panel__body">
+                  <h3 class="syllabus__heading">
+                    {{ category.title }}
+                  </h3>
+                  <hr style="margin: 0;">
+                  {% for post in category.posts limit:10%}
+                    {% include "syllabus_item" %}
+                  {% endfor %}
+                  {% if category.posts.size >= 10 %}
+                    <div class="syllabus__item">
+                      <a href="{{ category.url }}" kjb-settings-id="{{ 'show_more' | settings_id: section: section }}">{{ section.settings.show_more }}</a>
                     </div>
                   {% endif %}
-                {% endfor %}
-              {% endif %}
+                  {% if category.children? %}
+                    {% for category in category.subcategories %}
+                      {% if category.pending_drip? %}
+                        <div class="syllabus__item syllabus__item--sub" id="category-{{ category.id }}">
+                          <h5 class="syllabus__heading">
+                            {{ category.title }}
+                            <span kjb-settings-id="{{ 'coming_soon' | settings_id: section: section }}">&nbsp;{{ section.settings.coming_soon }}</span>
+                          </h5>
+                        </div>
+                      {% else %}
+                        <div class="syllabus__item syllabus__item--sub" id="category-{{ category.id }}">
+                          <h5 class="syllabus__heading">
+                            {{ category.title }}
+                          </h5>
+                          <div class="syllabus_item_container">
+                            {% for post in category.posts %}
+                              {% include "syllabus_item" %}
+                            {% endfor %}
+                          </div>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+          {% if paginate.pages > 1 %}
+            <div class="pag__wrapper">
+              {% include "pagination" %}
             </div>
-          </div>
-        {% endif %}
-      {% endfor %}
-      {% if paginate.pages > 1 %}
-        <div class="pag__wrapper">
-          {% include "pagination" %}
+          {% endif %}
         </div>
-      {% endif %}
+      </div>
     {% endpaginate %}
   {% else %}
     <div class="panel syllabus" kjb-settings-id="{{ 'type' | settings_id: section: section }}">

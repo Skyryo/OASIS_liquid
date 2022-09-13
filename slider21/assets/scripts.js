@@ -1051,9 +1051,16 @@ $(function(){
   });
 });
 $('.user-product-top-slider').slick({
+  arrows:false,
+  autoPlay:true,
+  autoplaySpeed:2000,
+  dots:true,
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 5,
+  infinite: true,
+  appendDots: $('.user-slider-dots'),
+    
   responsive: [
     {
       breakpoint: 768,

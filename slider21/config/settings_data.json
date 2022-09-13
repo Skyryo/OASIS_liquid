@@ -8,7 +8,7 @@
           "logo_action": "product",
           "logo_text": "OASIS",
           "show_menu": true,
-          "menu": "FccSfri2",
+          "menu": "5gdqeLT8",
           "search_toggle": "検索",
           "language_logout": "ログアウト",
           "language_settings": "設定",
@@ -114,7 +114,7 @@
           "1481845625971": {
             "id": "1481845625971",
             "name": "Product Info",
-            "hidden": "false",
+            "hidden": "true",
             "type": "product_info",
             "schemaName": "Product Info",
             "sectionId": "product_body",
@@ -128,7 +128,7 @@
           "1655125632285": {
             "id": "1655125632285",
             "name": "Code",
-            "hidden": "false",
+            "hidden": "true",
             "type": "product_code",
             "schemaName": "Code",
             "sectionId": "product_body",
@@ -149,11 +149,11 @@
               "start_text": "受講を開始する",
               "resume_text": "続きから開始する",
               "again_text": "続きから開始する",
-              "btn_style": "outline",
-              "btn_size": "small",
+              "btn_style": "solid",
+              "btn_size": "large",
               "btn_width": "auto",
-              "btn_background_color": "#335719",
-              "btn_text_color": ""
+              "btn_background_color": "#f1c40f",
+              "btn_text_color": "#2c3e50"
             }
           }
         },
