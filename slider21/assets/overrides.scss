@@ -16,10 +16,32 @@ a {
   .user {
     position: relative;
   }
+  .user__avatar{
+    margin: 1rem;
+  }
   .navbar-nav {
     margin: 0;
   }
-  
+  /*ハンバーガーメニューの外枠削除*/
+  .navbar-toggler {
+    border-color: transparent!important;
+  }
+  .nav-link {
+    color:#316745!important;
+  }
+  .user-drop-bgcolor{
+    background-color: #ecf0f1;
+    border:0;
+    pading:0;
+  }
+  .dropdown-item{
+    color:#316745;
+    font-size:14px;
+    line-height: 1.5rem;
+  }
+  .navbar-toggler {
+    padding:0;
+  }
 }
 
 /*--------------
@@ -201,6 +223,20 @@ responsive
       .syllabus__img{
         width: 150px;
       }
+    }
+  }
+  .header{
+    .user-drop-bgcolor{
+      background-color: unset;
+    }
+    .user__dropdow {
+      text-align: left;
+    }  
+    .dropdown-item{
+      border-bottom:solid 1px #e5e4e4;
+      padding: 3px 8px;
+      font-size:12px;
+      line-height: 1.5rem;
     }
   }
   /*--------------
