@@ -103,9 +103,12 @@ product top
   .btn {
     margin: 12px 6px;
     min-width: 170px;
+    background: white;
   }
   .btn-outline-success {
-    color: #335719;
+    color: #0a2948;
+    border: #c7c7c7 1px solid;
+    padding: 1rem;
   }
 }
 .slick-dots {
@@ -140,6 +143,9 @@ product top
     transition: .5s;
     opacity: 1;
   }
+}
+.panel__body{
+  padding: 0;
 }
 .user-product-body{
   .panel__body{
@@ -294,6 +300,7 @@ responsive
   product top
   --------------*/
   .category-search {
+    justify-content: space-around;
     .btn {
       margin: 4px 6px;
       min-width: 140px;
