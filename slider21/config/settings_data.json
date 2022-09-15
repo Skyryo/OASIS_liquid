@@ -5,7 +5,7 @@
         "settings": {
           "show_header": true,
           "logo_type": "image",
-          "logo_action": "product",
+          "logo_action": "site",
           "logo_text": "OASIS",
           "show_menu": true,
           "menu": "5gdqeLT8",
@@ -19,7 +19,7 @@
           "announcement_color": "#1abc9c",
           "announcement_text_color": "#fff",
           "align_logo": "left",
-          "logo": "themes/2150982503/settings_images/yhZceBASfW73wURsvSS8_baTtUHHURb2wvRIsokfU_Logo_coted01.png",
+          "logo": "themes/2151624932/settings_images/4s2ju1AzS2qbc94ZQmWA_Logo_OASIS_Opc0.png",
           "header_height": "40",
           "language_announcements": "Announcements",
           "background_color_user": "#ecf0f1",
@@ -210,10 +210,10 @@
           "show_copyright": true,
           "copyright": "Co-ted.inc",
           "show_logo": true,
-          "show_menu": true,
+          "show_menu": false,
           "menu": "5gdqeLT8",
           "align_logo": "center",
-          "show_social_icons": true,
+          "show_social_icons": false,
           "social_icons_new_window": false,
           "social_icon_background_style": "social-icons--none",
           "social_icon_alignment": "social-icons--left",
@@ -251,7 +251,7 @@
       "breadcrumbs": {
         "settings": {
           "show_breadcrumbs": true,
-          "categories": "カテゴリ一覧",
+          "categories": "ジャンル一覧",
           "search": "Search",
           "announcements": "Announcements",
           "divider": ">",
@@ -356,33 +356,59 @@
       },
       "post_sidebar": {
         "settings": {
-          "show_sidebar": "true"
+          "show_sidebar": true
         },
         "block_order": [
-          "1481845715286",
-          "1481845721274"
+          "1481845721274",
+          "1663210102731"
         ],
         "type": "post_sidebar",
         "blocks": {
-          "1481845715286": {
-            "settings": {
-              "language_downloads": "Downloads"
-            },
-            "type": "post_downloads"
-          },
           "1481845721274": {
+            "id": "1481845721274",
+            "name": "Instructor",
+            "hidden": "true",
+            "type": "instructor",
+            "schemaName": "Instructor",
+            "sectionId": "post_sidebar",
+            "sectionType": "post_sidebar",
             "settings": {
               "heading": "Instructor",
-              "show_img": "true",
+              "show_img": true,
+              "name": "菅原 出",
+              "title": "OASIS 学校長",
+              "bio": "中央大学法学部政治学科卒業後、オランダ留学。アムステルダム大学政治社会学部国際関係学科卒。国際関係学修士号取得。在蘭日系企業勤務、東京財団リサーチフェロー、英国系危機管理会社G4S Japan役員等を経て現職。\n米国を中心とする外交・安全保障問題、中東の安全保障やテロリズム、治安リスク分析や危機管理が専門で、大手プラント会社、商社や国際協力機構（JICA）の危機管理アドバイザーを務める。著書に『外注される戦争』（草思社、2007年）、『戦争詐欺師』（講談社、2009年）、『秘密戦争の司令官オバマ』（並木書房、2013年）、『リスクの世界地図』（朝日新聞出版、2014年）、『「イスラム国」の「恐怖の輸出」』（講談社現代新書、2015年）、『米国とイランはなぜ戦うのか』（並木書房、2020年）など多数。",
+              "image": "themes/2151629022/settings_images/8pt086NqRDCEKyqqnbSK_file.jpg",
+              "accent_color": "#316745"
+            }
+          },
+          "1663210102731": {
+            "type": "custom_sidebar_block",
+            "name": "Custom Block",
+            "hidden": "true",
+            "sectionId": "post_sidebar",
+            "settings": {
+              "heading": "講師",
+              "show_img": false,
               "image": "",
-              "name": "OASIS",
-              "title": "Instructor",
-              "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.",
-              "accent_color": ""
-            },
-            "type": "instructor"
+              "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p>",
+              "show_cta": true,
+              "btn_text": "Call To Action",
+              "btn_action": "http://www.kajabi.com",
+              "btn_target": false,
+              "btn_style": "solid",
+              "btn_size": "small",
+              "btn_width": "auto",
+              "btn_background_color": "",
+              "btn_text_color": "",
+              "alignment": "left",
+              "background_color": "",
+              "text_color": ""
+            }
           }
-        }
+        },
+        "name": "Post Sidebar",
+        "hidden": "false"
       },
       "pop_upsell": {
         "settings": {

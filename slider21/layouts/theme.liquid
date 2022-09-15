@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYEFHQD8XJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NYEFHQD8XJ');
+    </script>
     <!-- Title and description ================================================== -->
     {% csrf_meta_tags %}
     <title>
-      {% if page_title %}
+      OASIS -動画コンテンツ-
+      <!--{% if page_title %}
         {{ page_title }}
       {% else %}
         {{ current_site.title }}
-      {% endif %}
+      {% endif %} -->
     </title>
     <meta charset="utf-8" />
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">

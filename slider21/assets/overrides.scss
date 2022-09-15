@@ -13,8 +13,11 @@ hr {
   height: 2px;
   opacity: 1;
 }
+/*-----
+Header
+-----*/
 .header {
-  padding: 0;
+  padding: 0 5px;
   .navbar-collapse{
     flex-grow: unset;
   }
@@ -27,9 +30,17 @@ hr {
   .navbar-nav {
     margin: 0;
   }
+  .navbar-brand {
+    width: 80px!important;
+    margin: 0;
+  }
   /*ハンバーガーメニューの外枠削除*/
   .navbar-toggler {
     border-color: transparent!important;
+  }
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 24px;
   }
   .nav-link {
     color:#316745!important;
@@ -103,7 +114,7 @@ product top
   
   .btn {
     margin: 12px 6px;
-    min-width: 170px;
+    min-width: 190px;
     background: white;
   }
   .btn-outline-success {
@@ -233,7 +244,7 @@ categories
     border-bottom: unset;
   }
   .card-img-top  {
-    padding:1.25rem 0.25rem 0;
+    padding:0 1rem;
     margin: 0!important;
   }
 }
@@ -304,7 +315,7 @@ responsive
     justify-content: space-around;
     .btn {
       margin: 4px 6px;
-      min-width: 140px;
+      min-width: 170px;
       width: auto;
     }
   }

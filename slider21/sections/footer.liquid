@@ -22,7 +22,10 @@
           </div>
         {% endif %}
         {% if f-ShowMenu %}
-          <div class="user-footer-menu-container">
+          {% for link in current_site.link_lists[f-Menu].links %}
+            <a class="footer__menu-item" href="{{ link.url }}">{{ link.name }}</a>
+          {% endfor %}
+         <!-- <div class="user-footer-menu-container">
             <div kjb-settings-id="{{ kjb-f-Menu }}" class="footer__menu">
               <div class="user-footer-menu-title">ジャンル</div>
               {% for link in current_site.link_lists[f-Menu].links %}
@@ -40,7 +43,7 @@
               <a href="#" class="footer__menu-item">クラブ活動に参加する</a>
               <a href="#" class="footer__menu-item">クラブをつくる</a>
             </div>
-          </div>
+          </div> -->
         {% endif %}
       </div>
       {% include "social_icons" %}
