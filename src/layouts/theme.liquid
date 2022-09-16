@@ -86,6 +86,18 @@
         }
       </style>
     {% endif %}
+    <style>
+      .user-category .media-body::before {
+        content: "{{ category.title }}";
+        width: auto;
+        font-size: 0.75rem;
+        background-color: #999;
+        padding: 4px 1rem;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
 
     <!-- Header hook ================================================== -->
     {% content_for_header %}    

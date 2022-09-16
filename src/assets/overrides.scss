@@ -13,16 +13,23 @@ hr {
   height: 2px;
   opacity: 1;
 }
+.section--global {
+  padding-top: 77px;
+}
 /*-----
 Header
 -----*/
 .header {
   padding: 0 5px;
+  position: fixed;
+
   .navbar-collapse{
     flex-grow: unset;
   }
   .user {
     position: relative;
+    display: flex;
+    align-items: center;
   }
   .user__avatar{
     margin: 1rem;
@@ -42,8 +49,15 @@ Header
     width: 30px;
     height: 24px;
   }
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
   .nav-link {
     color:#316745!important;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
   }
   .user-drop-bgcolor{
     background-color: #ecf0f1;
@@ -160,6 +174,8 @@ product top
   padding: 0;
 }
 .user-product-body{
+  margin-top: 50px;
+
   .panel__body{
     text-align: center;
     box-shadow: 0px 0px 10px 1px rgba(191, 186, 186, 0.6);
@@ -176,7 +192,7 @@ product top
   margin: auto;
 
   .syllabus__item__post {
-    width: 200px;
+    width: 300px;
     margin: auto 16px;
     height: auto;
     margin-right: 10px;
@@ -218,15 +234,21 @@ product top
 }
 .media {
   display: flex;
+  
   .media-left{
     .syllabus__img{
-      width: 200px;
+      width: 300px;
+      margin-right: 1rem;
     }
   }
   .media-body{
     .syllabus__title {
       font-size: 14px;
     }
+  }
+  .progress {
+    width: auto;
+    margin:23px 0 0 8px;
   }
 }
 .slick-slide {
@@ -286,21 +308,37 @@ responsive
   html, body, p {
     font-size: 12px!important;
   }
+  .section--global {
+    padding-top: 77px;
+  }  
   .media {
-    display: block;
+    //display: block;
+    justify-content: space-between;
     .media-left{
+
       .syllabus__img{
         width: 150px;
       }
     }
+    .progress {
+      display: none;
+    }
   }
   .header{
+    padding: 15px 5px;
     .user-drop-bgcolor{
       background-color: unset;
     }
     .user__dropdown {
       text-align: left;
-    }  
+    }
+    .nav-item {
+      margin: 20px 0;
+      display: block;
+    }
+    .user-nav-search {
+      margin-bottom: 14px;
+    }
     .dropdown-item{
       border-bottom:solid 1px #e5e4e4;
       padding: 3px 8px;

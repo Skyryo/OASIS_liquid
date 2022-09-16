@@ -1034,7 +1034,7 @@ $(function(){
   $('.syllabus_item_container').slick({
     arrows: true,
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     variableWidth: true,// スライド幅の自動計算を無効化
     responsive: [{
@@ -1063,7 +1063,7 @@ $('.user-product-top-slider').slick({
     
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 900,
       settings: {
         arrows: false,
         centerMode: true,

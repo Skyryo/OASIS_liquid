@@ -1,11 +1,11 @@
 <div class="panel syllabus">
-  <div class="panel__body">
-    <h5 class="syllabus__heading">
+  <div class="panel__body user-category">
+    <h3 class="syllabus__heading">
       {{ category.title }}
       {% if category.pending_drip? %}
         <span kjb-settings-id="{{ 'coming_soon' | settings_id: section: section }}">&nbsp;{{ section.settings.coming_soon }}</span>
       {% endif %}
-    </h5>
+    </h3>
     {% unless category.pending_drip? %}
       {% paginate category.posts by 10 %}
         {% for post in paginate.collection %}
