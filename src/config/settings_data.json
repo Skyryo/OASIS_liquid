@@ -9,7 +9,7 @@
           "logo_text": "OASIS",
           "show_menu": true,
           "menu": "5gdqeLT8",
-          "search_toggle": "検索",
+          "search_toggle": "",
           "language_logout": "ログアウト",
           "language_settings": "設定",
           "language_library": "マイページ",
@@ -39,13 +39,19 @@
       },
       "search": {
         "settings": {
-          "show_search": "true",
+          "show_search": false,
           "search_text": "Search for something...",
           "background_color": "#92969c",
           "text_color": "#ffffff"
         },
         "type": "search",
-        "hidden": "false"
+        "hidden": "false",
+        "name": "Search Bar",
+        "blocks": {
+        },
+        "block_order": [
+
+        ]
       },
       "product_hero": {
         "settings": {
@@ -128,13 +134,13 @@
           "1655125632285": {
             "id": "1655125632285",
             "name": "Code",
-            "hidden": "true",
+            "hidden": "false",
             "type": "product_code",
             "schemaName": "Code",
             "sectionId": "product_body",
             "sectionType": "product_body",
             "settings": {
-              "code": ""
+              "code": "<div class=\"user-product-top-slider\">\n  <div class=\"user-slide-img\"><a href=\"/products/2/categories/2151071719/posts/2160704098\"><img src=\"https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/YRmHcqaiQ42rWqk1K0Xy__.png\" alt=\"ドローンと安全保障\"></a></div>\n  <div class=\"user-slide-img\"><a href=\"/products/2/categories/2150571086/posts/2161445062\"><img src=\"https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/MZaclSuR1OPL1PBZa6LQ__.png\" alt=\"イスラム国誕生の背景\"></a></div>\n  <div class=\"user-slide-img\"><a href=\"/products/2/categories/2150571086/posts/2158749401\"><img src=\"https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/HervqX93RNm953s0j4TF__IS_.png\" alt=\"米国の対IS作戦\"></a></div>\n  <div class=\"user-slide-img\"><a href=\"/products/2/categories/2151071805/posts/2161450882\"><img src=\"https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/BE5BSoXdRhKaIAhhJjNG__.png\" alt=\"エネルギー安全保障\"></a></div>\n  <div class=\"user-slide-img\"><a href=\"/products/2/categories/2151071726/posts/2160704103\"><img src=\"https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/IOgCiDpQMq1DsfWZ7DTX_PMC_.png\" alt=\"民間軍事会社と国際安全保障\"></a></div>\n  <div class=\"user-slide-img\"><a href=\"/products/2/categories/2151071795/posts/2161339769\"><img src=\"https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/gMMJncDGQ9eM4oRA61Vf__.png\" alt=\"朝鮮半島の安全保障\"></a></div>\n  <div class=\"user-slide-img\"><a href=\"/products/2/categories/2151071726/posts/2160704117\"><img src=\"https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/xTkXBgISHilaqYlCTJXe_PMC_.png\" alt=\"民間軍事会社と国際安全保障\"></a></div>\n</div>\n<div class=\"user-slider-dots\"></div>\n"
             }
           },
           "1655125767448": {
@@ -150,7 +156,7 @@
               "resume_text": "続きから開始する",
               "again_text": "続きから開始する",
               "btn_style": "solid",
-              "btn_size": "large",
+              "btn_size": "med",
               "btn_width": "auto",
               "btn_background_color": "#f1c40f",
               "btn_text_color": "#2c3e50"
@@ -272,9 +278,9 @@
           "player_type": "inline",
           "count_text_singular": "Lesson",
           "count_text_plural": "Lessons",
-          "next_cat": "Next Category",
-          "next": "Next",
-          "previous": "Back",
+          "next_cat": "次のカテゴリへ",
+          "next": "次へ",
+          "previous": "前へ",
           "btn_style": "outline",
           "btn_size": "small",
           "auto_advance": true,
@@ -283,10 +289,10 @@
           "seconds": "Seconds",
           "play": "Play Now",
           "cancel": "Cancel",
-          "player_accent": "",
+          "player_accent": "#ff3f2d",
           "player_color": "",
           "show_more": "Show More",
-          "btn_background_color": "",
+          "btn_background_color": "#010101",
           "btn_text_color": "",
           "accent_color": "rgba(0, 0, 0, 0)"
         },
@@ -304,15 +310,15 @@
           "alignment": "left",
           "hide_mark_as_complete": false,
           "mark_as_complete_position": "bottom",
-          "language_complete": "Complete",
-          "language_mark_as_complete": "Mark As Complete",
+          "language_complete": "視聴済み",
+          "language_mark_as_complete": "視聴済みにする",
           "use_next": true,
-          "encouragement": "Great Job! Keep Going!",
-          "next": "Next Lesson",
+          "encouragement": "お疲れ様です！",
+          "next": "次の動画へ",
           "btn_background_color": "#f1c40f",
           "btn_text_color": "#2c3e50",
           "smart_next_background": "#f6f6f6",
-          "smart_next_color": "",
+          "smart_next_color": "#2c3e50",
           "smart_next_link": ""
         },
         "block_order": [
@@ -340,19 +346,26 @@
       },
       "post_comments": {
         "settings": {
-          "language_comment_singular": "Comment",
-          "language_comment_plural": "Comments",
+          "language_comment_singular": "コメント",
+          "language_comment_plural": "コメント",
           "language_comment_locked": "Comments Locked",
-          "language_comment_placeholder": "Say Something...",
-          "language_comment_add": "Post Comment",
-          "language_comment_reply": "REPLY",
-          "language_comment_edit": "EDIT",
-          "language_comment_show_more": "Show More",
-          "language_comment_show_more_loading": "Loading More Comments...",
-          "comment_btn_background_color": "",
+          "language_comment_placeholder": "こちらにコメントを記入ください",
+          "language_comment_add": "コメントする",
+          "language_comment_reply": "返信",
+          "language_comment_edit": "編集",
+          "language_comment_show_more": "もっと見る",
+          "language_comment_show_more_loading": "読み込み中...",
+          "comment_btn_background_color": "#316745",
           "comment_btn_text_color": ""
         },
-        "type": "post_comments"
+        "type": "post_comments",
+        "name": "Post Comments",
+        "hidden": "false",
+        "blocks": {
+        },
+        "block_order": [
+
+        ]
       },
       "post_sidebar": {
         "settings": {
@@ -412,15 +425,22 @@
       },
       "pop_upsell": {
         "settings": {
-          "show": "false",
-          "enabled": "false",
-          "show_img": "false",
+          "show": false,
+          "enabled": false,
+          "show_img": false,
+          "text": "<h1>Course Complete</h1>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>",
           "image": "",
-          "text": "<h1>Course Complete</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>",
           "overlay_color": "",
           "background_color": ""
         },
-        "type": "pop_upsell"
+        "type": "pop_upsell",
+        "name": "Course Complete Message",
+        "hidden": "false",
+        "blocks": {
+        },
+        "block_order": [
+
+        ]
       },
       "categories_body": {
         "settings": {
@@ -430,6 +450,21 @@
         "type": "categories_body",
         "name": "Categories Body",
         "hidden": "false",
+        "blocks": {
+        },
+        "block_order": [
+
+        ]
+      },
+      "post_comment": {
+        "name": "Post Comment",
+        "type": "post_comment",
+        "hidden": "false",
+        "settings": {
+          "language_comment_add": "送信する",
+          "language_comment_reply": "返信",
+          "language_comment_edit": "編集"
+        },
         "blocks": {
         },
         "block_order": [

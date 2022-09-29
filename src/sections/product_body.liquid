@@ -1,18 +1,7 @@
 {% if section.settings.show_welcome %}
   {% if section.blocks.size > 0 %}
-    <div class="panel user-product-body" style="text-align: {{ section.settings.alignment }}"  kjb-settings-id="{{ 'alignment' | settings_id: section: section }}">
+    <div class="panel user-product-body" style="text-align: {{ section.settings.alignment }}" kjb-settings-id="{{ 'alignment' | settings_id: section: section }}">
       <div class="panel__body">
-        <div class="user-product-top-slider">
-           <div class="user-slide-img"><a href="/products/2/categories/2151071726/posts/2160704103"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/sQEHivH1RIKSFecDv7YJ__1.jpeg" alt="民間軍事会社と国際安全保障"></a></div>
-           <div class="user-slide-img"><a href="/products/2/categories/2151071719/posts/2160704098"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/tc2za9FgTKKWSAVLHuxa_81b49a7ee12810a4a2be11d3d0d070d5.jpg" alt="ドローンと安全保障"></a></div>
-           <div class="user-slide-img"><a href="/products/2/categories/2150571086/posts/2158749401"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/o4xguWkwRfWWqgkqb9NK_78491934-9fbb-4b42-8be8-2ec00a6de0a3.jpg" alt="国際テロリズム"></a></div>
-           <div class="user-slide-img"><a href="/products/2/categories/2151071795/posts/2161339769"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/v9fNDMyBQDKK2fRUX9Vu_bebbda803442d448d942a8ca7ab8e4f6.jpg" alt="朝鮮半島の安全保障"></a></div>
-           <div class="user-slide-img"><a href="/products/2/categories/2151071719/posts/2160704098"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/tc2za9FgTKKWSAVLHuxa_81b49a7ee12810a4a2be11d3d0d070d5.jpg" alt="ドローンと安全保障"></a></div>
-           <div class="user-slide-img"><a href="/products/2/categories/2150571086/posts/2158749401"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/o4xguWkwRfWWqgkqb9NK_78491934-9fbb-4b42-8be8-2ec00a6de0a3.jpg" alt="国際テロリズム"></a></div>
-           <div class="user-slide-img"><a href="/products/2/categories/2151071795/posts/2161339769"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/v9fNDMyBQDKK2fRUX9Vu_bebbda803442d448d942a8ca7ab8e4f6.jpg" alt="朝鮮半島の安全保障"></a></div>
-           <div class="user-slide-img"><a href="/products/2/categories/2150571086/posts/2158749401"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147576421/products/o4xguWkwRfWWqgkqb9NK_78491934-9fbb-4b42-8be8-2ec00a6de0a3.jpg" alt="国際テロリズム"></a></div>
-        </div>
-        <div class="user-slider-dots"></div>
         {% for block in section.blocks %}
           {% case block.type %}
             {% when 'product_video' %}
@@ -66,8 +55,7 @@
             "type": "video",
             "id": "video",
             "label": "Video"
-          },
-          {
+          }, {
             "type": "image_picker",
             "id": "image",
             "label": "Image",
@@ -82,20 +70,17 @@
           {
             "type": "header",
             "content": "Product Info"
-          },
-          {
+          }, {
             "type": "checkbox",
             "label": "Show Image",
             "id": "show_img",
             "default": "true"
-          },
-          {
+          }, {
             "type": "checkbox",
             "label": "Show Title",
             "id": "show_title",
             "default": "true"
-          },
-          {
+          }, {
             "type": "checkbox",
             "label": "Show Description",
             "id": "show_desc",
@@ -110,8 +95,7 @@
           {
             "type": "header",
             "content": "Text"
-          },
-          {
+          }, {
             "type": "rich_text",
             "id": "content",
             "label": "Content",
@@ -126,30 +110,26 @@
           {
             "type": "header",
             "content": "Image"
-          },
-          {
+          }, {
             "type": "image_picker",
             "id": "image",
             "label": "Image",
             "width": 2300,
             "height": 2300,
             "info": "Suggested dimensions: 1856 × 1044"
-          },
-          {
+          }, {
             "type": "action",
             "id": "img_action",
             "label": "Image Action",
             "default": ""
-          },
-          {
+          }, {
             "type": "checkbox",
             "id": "link_target",
             "label": "Open In New Window",
             "default": "false"
           }
         ]
-      },
-      {
+      }, {
         "type": "product_cta",
         "name": "Call To Action",
         "elements": [
@@ -174,45 +154,57 @@
             "id": "btn_target",
             "label": "Open In New Window",
             "default": "false"
-          },
-          {
+          }, {
             "type": "radio",
             "id": "btn_style",
             "label": "CTA Style",
             "default": "solid",
             "options": [
-              { "label": "Solid", "value": "solid" },
-              { "label": "Outline", "value": "outline" }
+              {
+                "label": "Solid",
+                "value": "solid"
+              }, {
+                "label": "Outline",
+                "value": "outline"
+              }
             ]
-          },
-          {
+          }, {
             "type": "radio",
             "id": "btn_size",
             "label": "CTA Size",
             "default": "med",
             "options": [
-              { "label": "Small", "value": "small" },
-              { "label": "Medium", "value": "med" },
-              { "label": "Large", "value": "large" }
+              {
+                "label": "Small",
+                "value": "small"
+              }, {
+                "label": "Medium",
+                "value": "med"
+              }, {
+                "label": "Large",
+                "value": "large"
+              }
             ]
-          },
-          {
+          }, {
             "type": "radio",
             "id": "btn_width",
             "label": "Button Width",
             "default": "block",
             "options": [
-              { "label": "Auto", "value": "auto" },
-              { "label": "Full Width", "value": "block" }
+              {
+                "label": "Auto",
+                "value": "auto"
+              }, {
+                "label": "Full Width",
+                "value": "block"
+              }
             ]
-          },
-          {
+          }, {
             "type": "color",
             "id": "btn_background_color",
             "label": "Button Color",
             "allow_blank": true
-          },
-          {
+          }, {
             "type": "color",
             "id": "btn_text_color",
             "label": "Button Text Color",
@@ -220,8 +212,7 @@
             "info": "For solid buttons only"
           }
         ]
-      },
-      {
+      }, {
         "type": "product_start",
         "name": "Start Button",
         "elements": [
@@ -247,45 +238,57 @@
             "id": "again_text",
             "label": "Start Over Text",
             "default": "Start Course Over"
-          },
-          {
+          }, {
             "type": "radio",
             "id": "btn_style",
             "label": "CTA Style",
             "default": "solid",
             "options": [
-              { "label": "Solid", "value": "solid" },
-              { "label": "Outline", "value": "outline" }
+              {
+                "label": "Solid",
+                "value": "solid"
+              }, {
+                "label": "Outline",
+                "value": "outline"
+              }
             ]
-          },
-          {
+          }, {
             "type": "radio",
             "id": "btn_size",
             "label": "CTA Size",
             "default": "med",
             "options": [
-              { "label": "Small", "value": "small" },
-              { "label": "Medium", "value": "med" },
-              { "label": "Large", "value": "large" }
+              {
+                "label": "Small",
+                "value": "small"
+              }, {
+                "label": "Medium",
+                "value": "med"
+              }, {
+                "label": "Large",
+                "value": "large"
+              }
             ]
-          },
-          {
+          }, {
             "type": "radio",
             "id": "btn_width",
             "label": "Button Width",
             "default": "block",
             "options": [
-              { "label": "Auto", "value": "auto" },
-              { "label": "Full Width", "value": "block" }
+              {
+                "label": "Auto",
+                "value": "auto"
+              }, {
+                "label": "Full Width",
+                "value": "block"
+              }
             ]
-          },
-          {
+          }, {
             "type": "color",
             "id": "btn_background_color",
             "label": "Button Color",
             "allow_blank": true
-          },
-          {
+          }, {
             "type": "color",
             "id": "btn_text_color",
             "label": "Button Text Color",
@@ -293,43 +296,37 @@
             "info": "For solid buttons only"
           }
         ]
-      },
-      {
+      }, {
         "type": "product_progress",
         "name": "Course Progress",
         "elements": [
           {
             "type": "header",
             "content": "Course Progress"
-          },
-          {
+          }, {
             "type": "text",
             "id": "completed",
             "label": "Completed Text",
             "default": "Lessons Completed"
-          },
-          {
+          }, {
             "type": "header",
             "content": "Block Appearance",
             "style": "subheading"
-          },
-          {
+          }, {
             "type": "color",
             "label": "Accent Color Override",
             "id": "accent_color",
             "allow_blank": true
           }
         ]
-      },
-      {
+      }, {
         "type": "product_code",
         "name": "Code",
         "elements": [
           {
             "type": "header",
             "content": "Code"
-          },
-          {
+          }, {
             "type": "textarea",
             "id": "code",
             "label": "Code",
@@ -344,16 +341,22 @@
         "id": "show_welcome",
         "label": "Show Welcome Body",
         "default": "false"
-      },
-      {
+      }, {
         "type": "radio",
         "id": "alignment",
         "label": "Text Alignment",
         "default": "left",
         "options": [
-          { "label": "Left", "value": "left" },
-          { "label": "Center", "value": "center" },
-          { "label": "Right", "value": "right" }
+          {
+            "label": "Left",
+            "value": "left"
+          }, {
+            "label": "Center",
+            "value": "center"
+          }, {
+            "label": "Right",
+            "value": "right"
+          }
         ]
       }
     ]
